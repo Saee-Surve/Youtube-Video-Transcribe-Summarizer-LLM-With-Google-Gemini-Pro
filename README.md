@@ -1,5 +1,3 @@
-## Youtube-Video-Transcribe-Summarizer-LLM-App-With-Google-Gemini-Pro
-
 ## Overview
 A Streamlit app that extracts transcripts from YouTube videos and generates concise summaries using Google Gemini Pro. It helps users quickly get detailed notes from long videos.
 
