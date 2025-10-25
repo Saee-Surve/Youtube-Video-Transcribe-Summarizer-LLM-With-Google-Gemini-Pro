@@ -36,7 +36,7 @@ def generate_gemini_content(transcript_text, prompt):
     response = model.generate_content(prompt+ transcript_text)
     return response.text
 
-st.title("Youtube Transcript to Detailed Notes Converter")
+st.title("Youtube Transcript to Summarized Notes Converter")
 youtube_link = st.text_input("Enter Youtube Video Link: ")
 
 if youtube_link:
@@ -49,4 +49,5 @@ if st.button("Get Detailed Notes"):
     if transcript_text:
         summary = generate_gemini_content(transcript_text, prompt)
         st.markdown('## Detailed Notes: ')
+
         st.write(summary)
